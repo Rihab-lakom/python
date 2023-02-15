@@ -4,7 +4,7 @@ boolean = True #-variable declaration-Data Types-Primitive-Boolean
 string = 'Hello World' #-variable declaration-string
 pizza_toppings = ['Pepperoni', 'Sausage', 'Jalepenos', 'Cheese', 'Olives'] #variable declaration/list-initialize
 person = {'name': 'John', 'location': 'Salt Lake', 'age': 37, 'is_balding': False}#variable declaration/dictionary-initialize
-fruit = ('blueberry', 'strawberry', 'banana') #- variable declaration/types-initialize
+fruit = ('blueberry', 'strawberry', 'banana') #- variable declaration/typles/types-initialize
 print(type(fruit))#log statement/type check
 print(pizza_toppings[1])#log statement/list-acces value
 pizza_toppings.append('Mushrooms')# - List -- add value
@@ -41,17 +41,17 @@ while(x < 5):#- while loop/start fom 0 ,stoped in 4
     x += 1#- increment by 1
 
 pizza_toppings.pop()
-pizza_toppings.pop(1)
+pizza_toppings.pop(1)#delete value from list
 
 print(person)
-person.pop('eye_color')
-print(person)
+person.pop('eye_color')#delete key from a dictionary
+print(person)#log statement
 
 for topping in pizza_toppings:# conditional/ for loop
-    if topping == 'Pepperoni':
+    if topping == 'Pepperoni':#conditional statement
         continue #- continue
     print('After 1st if statement')
-    if topping == 'Olives':
+    if topping == 'Olives':#conditional statement
         break#break
 
 def print_hello_ten_times():#function/
