@@ -33,7 +33,16 @@ class User():
         return self
 
 sam = User("Sam", "lee", "samlee@codingdojo.com", 30)
+# sam.display_info()
+# sam.enroll()
 riri = User("riri", "lkm", "ririlkm@gmail.com", 25)
 lili = User("lili", "lkm", "lililkm@gmail.com", 27)
+# riri.spend_points(100)
+# lili.spend_points(50)
+# riri.display_info()
+# lili.display_info()
+# sam.display_info()
+#chaining methods#########
 sam.enroll().spend_points(50).display_info()
 riri.enroll().spend_points(80).display_info()
+
