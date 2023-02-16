@@ -1,4 +1,5 @@
 class User():
+    allUsers = []
     def __init__(self,f_name,l_name,email,age):
         self.f_name = f_name 
         self.l_name = l_name
@@ -31,6 +32,8 @@ class User():
     def spend_points(self ,amount):
         self.gold_card_points -= amount
         return self
+
+    @classmethod
 
 sam = User("Sam", "lee", "samlee@codingdojo.com", 30)
 # sam.display_info()
